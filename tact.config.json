@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tact-lang/tact/main/src/config/configSchema.json",
+  "projects": [
+    {
+      "name": "NFTCollection",
+      "path": "contracts/n_f_t_collection.tact",
+      "output": "build\\NFTCollection",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    },
+    {
+      "name": "NFTItem",
+      "path": "contracts/n_f_t_item.tact",
+      "output": "build\\NFTItem",
+      "options": {
+        "debug": false,
+        "external": false
+      },
+      "mode": "full"
+    }
+  ]
+}
