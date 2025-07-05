@@ -56,26 +56,26 @@ The **TON Enhancement Proposal (TEP)** standard for NFTs on The Open Network def
 
 ## NFT Gifts, Stickers, and Tokens
 
-### NFT Gifts
-NFT gifts are special digital tokens that can be sent as presents between users. They often include:
-- **Customizable Messages**: Personal notes attached to the gift
-- **Limited Editions**: Rare or seasonal gift collections
-- **Social Features**: Public or private gifting options
-- **Animation Effects**: Visual enhancements for gift presentation
+| NFT Type | Description | Key Features | Use Cases |
+|----------|-------------|--------------|-----------|
+| **NFT Gifts** | Special digital tokens sent as presents between users | • Customizable Messages<br>• Limited Editions<br>• Social Features<br>• Animation Effects | • Personal gifting<br>• Seasonal collections<br>• Social interactions<br>• Digital celebrations |
+| **NFT Stickers** | Digital stickers for messaging platforms and social media | • Emoji-like Assets<br>• Platform Integration<br>• Collection Sets<br>• Trading Cards | • Messaging apps<br>• Social media posts<br>• Collectible series<br>• Digital expression |
+| **NFT Tokens** | General-purpose digital tokens with specific use cases | • Utility Tokens<br>• Governance Tokens<br>• Reward Tokens<br>• Membership Tokens | • Service access<br>• Voting rights<br>• Platform incentives<br>• Exclusive communities |
 
-### NFT Stickers
-Digital stickers that can be used in messaging platforms and social media:
-- **Emoji-like Assets**: Small, expressive digital images
-- **Platform Integration**: Compatible with various messaging apps
-- **Collection Sets**: Themed sticker packs
-- **Trading Cards**: Collectible sticker series
+### Detailed Comparison Table
 
-### NFT Tokens
-General-purpose digital tokens with specific use cases:
-- **Utility Tokens**: Access to services or features
-- **Governance Tokens**: Voting rights in decentralized organizations
-- **Reward Tokens**: Incentives for platform participation
-- **Membership Tokens**: Access to exclusive communities
+| **Feature** | **NFT (Non-Fungible Token)** | **SBT (Soulbound Token)** | **Stickers** | **Gifts** |
+| --- | --- | --- | --- | --- |
+| **Definition** | Unique digital assets on the TON blockchain representing ownership of items like art, collectibles, or virtual goods. | Non-transferable tokens bound to a specific wallet, representing identity, credentials, or achievements. Not explicitly standardized in TON but conceptually applicable. | Digital images or animations used in Telegram chats, often tokenized as NFTs or managed as collectibles in TON.<br>Connected to Emojis for better usability. | Limited-edition digital items sent via Telegram, often with a time limit to claim, convertible to TON-based NFTs or other assets. |
+| **Transferability** | Fully transferable; can be bought, sold, or traded on TON marketplaces like Getgems or Disintar. | Non-transferable; permanently linked to the issuing wallet (if implemented in TON, would restrict transfers via smart contracts). | Varies; some are freely usable, others are tokenized as NFTs and transferable, depending on the sticker pack. | Initially non-transferable until claimed; some can be converted to transferable NFTs after claiming. |
+| **Monetary Value** | Holds monetary value based on market demand; often traded for TON coins. | No monetary value; designed for non-financial utility like reputation or proof of achievement. | Limited monetary value; premium or tokenized sticker packs may be sold as NFTs, but most are free or low-cost. | May have monetary value if converted to NFTs; otherwise, primarily sentimental or promotional. |
+| **Use Case in TON** | • Digital art and collectibles (e.g., TON Punks).<br>• Profile pictures or avatars.<br>• In-game assets in TON-based games. | • Potential for KYC verification (e.g., similar to Binance's BAB token).<br>• Proof of attendance at TON events.<br>• Digital credentials or DAO membership (if adopted). | • Enhancing Telegram chats with custom visuals.<br>• Collectible sticker packs sold as NFTs (e.g., premium Telegram sticker sets). | • Sending limited-edition digital gifts via Telegram (e.g., for promotions or events).<br>• Conversion to NFTs for trading or collection. |
+| **Storage** | Stored in TON wallets (e.g., Tonkeeper) as standard Jettons or NFTs. | Stored in a TON wallet but locked to prevent transfer (if implemented, would use custom smart contracts). | Stored in Telegram's sticker library; tokenized stickers stored in TON wallets as NFTs. | Stored in Telegram's gift section until claimed; convertible gifts stored as NFTs in TON wallets. |
+| **Creation/Minting** | Minted on TON blockchain using platforms like Getgems or custom smart contracts; follows TON's NFT standards. | Minted with smart contracts disabling transfer functions (not yet common in TON but feasible). | Bought via Stickers bot as NFTs on TON. | Issued by Telegram or partners as promotional items; conversion to NFTs handled by TON smart contracts. |
+| **Examples in TON** | • TON Punks, Egg Fight NFTs.<br>• Anonymous Telegram Numbers (linked to phone numbers). | • Hypothetical: TON-based KYC tokens or event badges (no prominent examples yet). | • Telegram's animated sticker packs.<br>• Tokenized sticker sets sold on Getgems. | • Telegram Stars gifts.<br>• Limited-edition event gifts convertible to NFTs. |
+| **Interoperability** | Compatible with TON marketplaces and potentially other blockchains via bridges. | Limited interoperability due to non-transferability; specific to issuing entity's ecosystem (if implemented). | Limited to Telegram unless tokenized as NFTs, then compatible with TON marketplaces. | Limited to Telegram until converted to NFTs, then compatible with TON marketplaces. |
+| **Revocability** | Generally not revocable unless specified in the smart contract. | Potentially revocable by the issuer (e.g., for credentials); depends on smart contract design. | Not revocable for standard stickers; tokenized stickers follow NFT rules. | May expire if not claimed within a time limit; converted NFTs follow standard NFT rules. |
+| **Privacy** | Publicly visible on the blockchain; ownership traceable unless anonymized. | Can be public or private depending on implementation; sensitive data may require privacy solutions. | Public within Telegram chats; tokenized stickers have public blockchain records. | Private until claimed; NFT-converted gifts have public blockchain records. |
 
 ---
 
