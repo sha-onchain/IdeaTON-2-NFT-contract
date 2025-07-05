@@ -1,6 +1,6 @@
 import "./structs";
 import "./messages";
-import "./../nft_item/nft_item";
+import "./n_f_t_item";
 
 contract NftCollection {
     
@@ -34,7 +34,7 @@ contract NftCollection {
     fun mint(sender: Address, msgValue: Int) {
         require(self.next_item_index >= 0, "non-sequential NFTs");
         
-        let nft_init: StateInit = self.getNftItemInit(self.next_item_index);
+        let nft_init: StateInit = self.getNFTItemInit(self.next_item_index);
         send(SendParameters{
                 to: contractAddress(nft_init), 
                 value: msgValue, 
@@ -84,12 +84,12 @@ contract NftCollection {
     }
 
     get fun get_nft_address_by_index(item_index: Int): Address?{      
-        let initCode: StateInit = self.getNftItemInit(item_index);
+        let initCode: StateInit = self.getNFTItemInit(item_index);
         return contractAddress(initCode);
     }
 
-    get fun getNftItemInit(item_index: Int): StateInit {
-        return initOf NftItem(myAddress(), item_index, self.owner_address, self.collection_content);
+    get fun getNFTItemInit(item_index: Int): StateInit {
+        return initOf NFTItem(myAddress(), item_index, self.owner_address, self.collection_content);
     }
     
     get fun get_nft_content(index: Int, individual_content: Cell): Cell { 
