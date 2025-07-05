@@ -46,6 +46,27 @@ The **TON Enhancement Proposal (TEP)** standard for NFTs on The Open Network def
 4. **Royalty System**: Automatic royalty distribution to creators
 5. **Collection Management**: Organized grouping of related NFTs
 
+### Collection Metadata
+```typescript
+{
+   "image": "https://ton.org/_next/static/media/smart-challenge1.7210ca54.png",
+   "name": "TON Smart Challenge #2",
+   "description": "TON Smart Challenge #2 Winners Trophy",
+   "social_links": []
+}
+```
+
+### NFTItem metadata
+```typescript
+{
+   "name": "TON Smart Challenge #2 Winners Trophy",
+   "description": "TON Smart Challenge #2 Winners Trophy 1 place out of 181",
+   "image": "https://ton.org/_next/static/media/duck.d936efd9.png",
+   "content_url": "https://ton.org/_next/static/media/dimond_1_VP9.29bcaf8e.webm",
+   "attributes": []
+}
+```
+
 ### Core Components:
 - **Collection Contract**: Manages the overall NFT collection
 - **Item Contract**: Individual NFT instances
